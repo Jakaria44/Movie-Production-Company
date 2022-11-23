@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" styleClass="root" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movielogin.AddMovieWindowController">
+   <Label fx:id="titleLabel" layoutX="521.0" layoutY="31.0" text="Add New Movie" underline="true">
+      <font>
+         <Font name="Algerian" size="35.0" />
+      </font>
+   </Label>
+   <VBox layoutX="450.0" layoutY="100.0" prefHeight="400.0" prefWidth="400.0">
+      <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="400.0">
+         <Label prefHeight="31.0" prefWidth="140.0" text="Title :">
+            <font>
+               <Font size="21.0" />
+            </font>
+         </Label>
+         <TextField fx:id="titleTexField" prefHeight="31.0" prefWidth="260.0" promptText="Enter Title of the Movie">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor>
+         </TextField>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="400.0">
+         <Label fx:id="releaseYearLabel" prefHeight="31.0" prefWidth="140.0" text="Release Year : ">
+            <font>
+               <Font size="21.0" />
+            </font>
+         </Label>
+         <TextField fx:id="releaseYearTexField" prefHeight="31.0" prefWidth="260.0" promptText="Enter Release Year of the Movie">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor>
+         </TextField>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="400.0">
+         <Label fx:id="genre1Label" prefHeight="31.0" prefWidth="140.0" text="Genre 1 :">
+            <font>
+               <Font size="21.0" />
+            </font>
+         </Label>
+         <TextField fx:id="genre1TexField" prefHeight="31.0" prefWidth="260.0" promptText="Enter genre of the Movie">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor>
+         </TextField>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="400.0">
+         <Label fx:id="genre2Label" prefHeight="31.0" prefWidth="140.0" text="Genre 2 :">
+            <font>
+               <Font size="21.0" />
+            </font>
+         </Label>
+         <TextField fx:id="genre2TexField" prefHeight="31.0" prefWidth="260.0" promptText="Enter genre of the Movie (Optional)">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor>
+         </TextField>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="400.0">
+         <Label fx:id="genre3Label" prefHeight="31.0" prefWidth="140.0" text="Genre 3 : ">
+            <font>
+               <Font size="21.0" />
+            </font>
+         </Label>
+         <TextField fx:id="genre3TexField" prefHeight="31.0" prefWidth="260.0" promptText="Enter genre of the Movie (Optional)">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor>
+         </TextField>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="400.0">
+         <Label fx:id="durationLabel" prefHeight="31.0" prefWidth="140.0" text="Duration : ">
+            <font>
+               <Font size="21.0" />
+            </font>
+         </Label>
+         <TextField fx:id="durationTexField" prefHeight="31.0" prefWidth="260.0" promptText="Enter Duration of the Movie">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor>
+         </TextField>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="400.0">
+         <Label fx:id="budgetLabel" prefHeight="31.0" prefWidth="140.0" text="Budget : ">
+            <font>
+               <Font size="21.0" />
+            </font>
+         </Label>
+         <TextField fx:id="budgetTexField" prefHeight="31.0" prefWidth="260.0" promptText="Enter Budget of the Movie">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor>
+         </TextField>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="400.0">
+         <Label fx:id="revenueLabel" prefHeight="31.0" prefWidth="140.0" text="Revenue : ">
+            <font>
+               <Font size="21.0" />
+            </font>
+         </Label>
+         <TextField fx:id="revenueTexField" prefHeight="31.0" prefWidth="260.0" promptText="Enter Revenue of the Movie">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor>
+         </TextField>
+      </HBox>
+   </VBox>
+   <Button fx:id="submitButton" alignment="CENTER" layoutX="612.0" layoutY="534.0" mnemonicParsing="false" onAction="#onSubmitButtonClick" prefHeight="50.0" prefWidth="130.0" text="ADD">
+      <font>
+         <Font size="19.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <VBox fx:id="pcNameVbox" alignment="TOP_CENTER" prefHeight="600.0" prefWidth="294.0" stylesheets="@../styles/homepage.css">
+      <children>
+         <VBox prefHeight="530.0" prefWidth="286.0">
+            <children>
+               <Label fx:id="pcNameField" alignment="TOP_CENTER" contentDisplay="CENTER" lineSpacing="8.0" prefHeight="295.0" prefWidth="304.0" text="Production Company Name" textAlignment="CENTER" wrapText="true">
+                  <font>
+                     <Font size="35.0" />
+                  </font>
+               </Label>
+            </children>
+         </VBox>
+         <Button fx:id="backButton" alignment="CENTER" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="62.0" prefWidth="178.0" text="Back">
+            <font>
+               <Font size="22.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Button>
+      </children>
+   </VBox>
+   <stylesheets>
+      <URL value="@../styles/homepage.css" />
+      <URL value="@../styles/LogInPage.css" />
+   </stylesheets>
+</AnchorPane>

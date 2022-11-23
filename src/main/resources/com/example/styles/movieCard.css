@@ -1,0 +1,41 @@
+
+
+#hBoxOfCard{
+   -fx-background-color: #006060;
+   -fx-background-radius: 30;
+
+}
+
+#hBoxOfCard:hover{
+   -fx-background-color: #004040;
+    -fx-background-radius: 30;
+
+}
+#movieNameLabel {
+    -fx-font-family: Marker Felt, fantasy;
+    -fx-font-size: 20pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: #dddddd;
+}
+#movieDetailsButton {
+    -fx-background-radius: 30;
+    -fx-background-color: #248f24;
+    -fx-text-fill: white;
+}
+#movieDetailsButton:hover{
+    -fx-background-radius: 30;
+    -fx-background-color: white;
+    -fx-text-fill: navy;
+}
+#movieTransferButton{
+    -fx-background-radius: 30;
+    -fx-background-color: #990000;
+    -fx-text-fill: white;
+}
+
+#movieTransferButton:hover{
+    -fx-background-radius: 30;
+    -fx-background-color: white;
+    -fx-text-fill:#990000 ;
+}
+

@@ -1,0 +1,52 @@
+.root{
+	-fx-background-color: darkslateblue;
+
+}
+.label{
+	-fx-text-fill: white;
+}
+
+.button{
+	-fx-background-radius: 15;
+	-fx-text-fill: white;
+	-fx-background-color: green;
+}
+.TextField{
+	
+}
+
+#resetButton{
+     -fx-background-color: mediumturquoise;
+     -fx-text-fill: darkblue;
+}
+
+#resetButton: hover{
+     -fx-background-color:darkblue ;
+     -fx-text-fill:mediumturquoise ;
+}
+#forgotPasswordButton{
+	-fx-background-color: midnightblue;
+	-fx-text-fill: lightgreen;
+}
+#forgotPasswordButton: hover{
+	-fx-background-color: lightgreen;
+	-fx-text-fill: midnightblue;
+}
+.button:hover{
+    -fx-background-color: white;
+    -fx-text-fill: green;
+}
+.choice-box .context-menu { -fx-background-color:white   }
+.choice-box .menu-item:focused {  -fx-background-color:#009999 }
+.choice-box .menu-item> .label { -fx-text-fill:black   }
+
+.choice-box{
+	-fx-background-color: #009999 ;
+	-fx-mark-color:  indigo;
+	-fx-text-fill: black;
+}
+
+.choice-box > .label {
+	 -fx-text-fill: black; 
+	 -fx-text-font-size: 14;
+}

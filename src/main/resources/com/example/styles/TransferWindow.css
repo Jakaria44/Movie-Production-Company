@@ -1,0 +1,9 @@
+#cancelButton{
+    -fx-background-color: mediumturquoise;
+    -fx-text-fill: darkblue;
+}
+#cancelButton:hover {
+
+     -fx-background-color:darkblue ;
+     -fx-text-fill:mediumturquoise ;
+ }

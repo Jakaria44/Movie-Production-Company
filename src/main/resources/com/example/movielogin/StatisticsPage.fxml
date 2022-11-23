@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="900.0" styleClass="root" xmlns="http://javafx.com/javafx/11.0.14-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movielogin.StatisticsPageController">
+   <stylesheets>
+      <URL value="@../styles/homepage.css"/>
+      <URL value="@../styles/LogInPage.css"/>
+      <URL value="@../styles/ScrollPaneStyle.css"/>
+   </stylesheets>
+   <HBox fx:id="movieListHBox" alignment="CENTER" layoutX="347.0" layoutY="325.0" prefHeight="256.0"
+         prefWidth="515.0" stylesheets="@../styles/hBoxStyle.css" visible="false">
+      <ScrollPane fx:id="scrollPane" prefHeight="241.0" prefWidth="515.0" styleClass="root"
+                  stylesheets="@../styles/homepage.css" HBox.hgrow="ALWAYS">
+         <HBox.margin>
+            <Insets top="10.0"/>
+         </HBox.margin>
+         <GridPane fx:id="gridPane" prefHeight="5.0" prefWidth="480.0">
+            <columnConstraints>
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            </columnConstraints>
+         </GridPane>
+      </ScrollPane>
+   </HBox>
+   <VBox fx:id="pcNameVbox" alignment="TOP_CENTER" prefHeight="600.0" prefWidth="294.0"
+         stylesheets="@../styles/homepage.css">
+      <children>
+         <VBox prefHeight="530.0" prefWidth="286.0">
+            <children>
+               <Label fx:id="pcNameField" alignment="TOP_CENTER" contentDisplay="CENTER" lineSpacing="8.0"
+                      prefHeight="295.0" prefWidth="304.0" text="Production Company Name" textAlignment="CENTER"
+                      wrapText="true">
+                  <font>
+                     <Font size="35.0"/>
+                  </font>
+               </Label>
+            </children>
+         </VBox>
+         <Button fx:id="backButton" alignment="CENTER" mnemonicParsing="false" onAction="#onBackButtonClick"
+                 prefHeight="62.0" prefWidth="178.0" text="Back">
+            <font>
+               <Font size="22.0"/>
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND"/>
+            </cursor>
+         </Button>
+      </children>
+   </VBox>
+   <Label fx:id="HeaderLabel" layoutX="526.0" layoutY="23.0" text="Statistics" underline="true">
+      <font>
+         <Font name="Algerian" size="36.0"/>
+      </font>
+   </Label>
+   <VBox layoutX="472.0" layoutY="98.0" prefHeight="186.0" prefWidth="351.0" spacing="20.0">
+      <children>
+         <Button fx:id="totalProfitButton" mnemonicParsing="false" onAction="#onTotalProfitButtonClick"
+                 prefHeight="40.0" prefWidth="289.0" text="Total Profit">
+            <font>
+               <Font size="19.0"/>
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND"/>
+            </cursor>
+         </Button>
+         <Button fx:id="latestMovieButton" mnemonicParsing="false" onAction="#onLatestMovieButtonClick"
+                 prefHeight="38.0" prefWidth="287.0" text="Latest Movie">
+            <font>
+               <Font size="19.0"/>
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND"/>
+            </cursor>
+         </Button>
+         <Button fx:id="maxRevenueMovieButton" mnemonicParsing="false" onAction="#onMaxRevenueMovieButtonClick"
+                 prefHeight="38.0" prefWidth="285.0" text="Movie with Maximum Revenue">
+            <font>
+               <Font size="19.0"/>
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND"/>
+            </cursor>
+         </Button>
+      </children>
+   </VBox>
+   <Label fx:id="titleLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="458.0" layoutY="285.0"
+          prefHeight="30.0" prefWidth="327.0" text=" " textAlignment="CENTER">
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </Label>
+   <Label fx:id="totalProfitLabel" layoutX="514.0" layoutY="386.0" prefHeight="66.0" prefWidth="317.0" text="Total : "
+          visible="false">
+      <font>
+         <Font name="MS Reference Specialty" size="24.0"/>
+      </font>
+   </Label>
+   <Label fx:id="totalProfitLabel1" layoutX="412.0" layoutY="386.0" prefHeight="66.0" prefWidth="89.0" text="Total : "
+          visible="false">
+      <font>
+         <Font name="MS Reference Specialty" size="24.0"/>
+      </font>
+   </Label>
+</AnchorPane>
