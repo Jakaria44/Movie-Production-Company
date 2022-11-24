@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="root" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movielogin.ShowAllMoviesController">
+   <children>
+      <VBox fx:id="movieListVBox2" layoutX="361.0" layoutY="80.0" prefHeight="458.0" prefWidth="500.0">
+         <children>
+            <HBox fx:id="movieListHBox" alignment="CENTER" prefHeight="100.0" prefWidth="500.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <ScrollPane fx:id="scrollPane" prefHeight="445.0" prefWidth="500.0" HBox.hgrow="ALWAYS">
+                     <content>
+                        <GridPane fx:id="gridPane" prefHeight="5.0" prefWidth="480.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                        </GridPane>
+                     </content>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </ScrollPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label fx:id="titleLabel" layoutX="486.0" layoutY="23.0" text="All Movies" underline="true">
+         <font>
+            <Font name="Algerian" size="35.0" />
+         </font>
+      </Label>
+      <VBox fx:id="pcNameVbox" alignment="TOP_CENTER" prefHeight="600.0" prefWidth="294.0">
+         <children>
+            <VBox prefHeight="530.0" prefWidth="286.0">
+               <children>
+                  <Label fx:id="pcNameField" alignment="TOP_CENTER" contentDisplay="CENTER" lineSpacing="8.0" prefHeight="295.0" prefWidth="304.0" text="Production Company Name" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Button fx:id="backButton" alignment="CENTER" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="62.0" prefWidth="178.0" text="Back">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../styles/homepage.css" />
+      <URL value="@../styles/LogInPage.css" />
+      <URL value="@../styles/ScrollPaneStyle.css" />
+   </stylesheets>
+</AnchorPane>

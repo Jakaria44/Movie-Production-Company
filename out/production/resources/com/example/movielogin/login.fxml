@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" stylesheets="@../styles/LogInPage.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movielogin.LoginController">
+   <children>
+      <Label layoutX="141.0" layoutY="334.0" text="Password: ">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <TextField fx:id="userText" layoutX="298.0" layoutY="199.0" prefHeight="38.0" prefWidth="300.0" promptText="Production Company Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <PasswordField fx:id="passwordText" layoutX="301.0" layoutY="332.0" onAction="#loginAction" prefHeight="38.0" prefWidth="300.0" promptText="Password">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></PasswordField>
+      <Button fx:id="loginButton" layoutX="465.0" layoutY="437.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="40.0" prefWidth="154.0" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+    <Button fx:id="resetButton" layoutX="261.0" layoutY="437.0" mnemonicParsing="false" onAction="#resetAction" prefHeight="40.0" prefWidth="146.0" text="Reset">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="135.0" layoutY="200.0" text="Username: ">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Button fx:id="forgotPasswordButton" layoutX="356.0" layoutY="524.0" mnemonicParsing="false" onAction="#onForgotPasswordButtonClick" prefHeight="40.0" prefWidth="183.0" text="Forgot Password?">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ChoiceBox fx:id="pcChoiceBox" layoutX="618.0" layoutY="201.0" prefHeight="34.0" prefWidth="239.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ChoiceBox>
+      <Label fx:id="titleLabel" layoutX="168.0" layoutY="87.0"  underline="true">
+         <font>
+            <Font name="Algerian" size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

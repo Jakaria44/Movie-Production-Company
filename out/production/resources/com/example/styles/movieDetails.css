@@ -1,0 +1,21 @@
+.root {
+    -fx-background-color: midnightblue;
+}
+
+.label {
+    -fx-text-fill: #e6e6e6;
+    -fx-font-size: 15pt;
+}
+
+#movieNameLabel {
+   -fx-font-family: Marker Felt, fantasy;
+   -fx-font-size: 30pt;
+   -fx-font-weight: bold;
+   -fx-text-fill: #dddddd;
+
+}
+#genreLabel{
+    -fx-font-family:URW Chancery L, cursive;
+    -fx-font-size: 20pt;
+    -fx-text-fill: #dddddd;
+}

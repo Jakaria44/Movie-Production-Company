@@ -1,0 +1,39 @@
+
+.root{
+	-fx-background-color: darkslateblue;
+
+}
+
+.button{
+	-fx-background-radius: 15;
+	-fx-text-fill: white;
+	-fx-background-color: green;
+}
+
+
+#pcNameField{
+    -fx-font-family: Stencil Std, fantasy;
+    -fx-font-size: 25pt;
+    -fx-text-fill: navy;
+}
+
+#pcNameVbox{
+    -fx-background-color: cadetblue;
+    -fx-background-radius: 7;
+
+}
+#exitButton{
+    -fx-background-radius: 15;
+    -fx-text-fill: white;
+    -fx-background-color: royalblue;
+}
+#exitButton:hover{
+    -fx-background-radius: 5;
+    -fx-text-fill:darkcyan ;
+    -fx-background-color: white;
+}
+
+.button:hover{
+    -fx-text-fill: green;
+    -fx-background-color:white ;
+}
